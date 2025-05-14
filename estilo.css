@@ -31,13 +31,14 @@ html {
     padding: 15px 20px;
 }
 
+/*
 .contenedor-header header .logo a {
     font-family: 'Righteous';
     font-size: 36px;
     color: #22f5f5;
     text-decoration: none;
 }
-
+*/
 .contenedor-header header ul {
     display: flex;
     list-style: none;
@@ -87,7 +88,7 @@ html {
 
 .inicio .contenido-banner img {
     margin-top: 40px;
-    border: 10px solid #22f5f5;
+    /* border: 10px solid #22f5f5; */
     display: block;
     width: 80%;
     margin: auto;
@@ -98,6 +99,7 @@ html {
     margin-top: 40px;
     font-size: 42px;
     font-family: 'Righteous';
+    color: aqua;
 }
 
 .inicio .contenido-banner h2 {
@@ -228,6 +230,20 @@ html {
     z-index: 10;
 }
 
+.sobremi button .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #1CB698;
+    z-index: -1;
+    transition: 1s;
+}
+
+.sobremi button:hover .overlay {
+    width: 100%;
+}
 
 /* SECCION S K I L L S */
 .skills {
@@ -300,87 +316,27 @@ html {
 }
 
 /* Estas clases se agregaran dinamicamente mediante javascript */
-.skills .skill .javascript {
+.skills .skill .JIRA {
     width: 0%;
-    animation: 2s javascript forwards;
+    animation: 2s JIRA forwards;
 }
 
-@keyframes javascript {
+@keyframes JIRA {
     0% {
         width: 0%;
     }
 
     100% {
-        width: 75%;
+        width: 90%;
     }
 }
 
-.skills .skill .htmlcss {
+.skills .skill .MetodologíasÁgiles {
     width: 0%;
-    animation: 2s htmlcss forwards;
+    animation: 2s MetodologíasÁgiles forwards;
 }
 
-@keyframes htmlcss {
-    0% {
-        width: 0%;
-    }
-
-    100% {
-        width: 89%;
-    }
-}
-
-.skills .skill .photoshop {
-    width: 0%;
-    animation: 2s photoshop forwards;
-}
-
-@keyframes photoshop {
-    0% {
-        width: 0%;
-    }
-
-    100% {
-        width: 95%;
-    }
-}
-
-.skills .skill .wordpress {
-    width: 0%;
-    animation: 2s wordpress forwards;
-}
-
-@keyframes wordpress {
-    0% {
-        width: 0%;
-    }
-
-    100% {
-        width: 81%;
-    }
-}
-
-.skills .skill .drupal {
-    width: 0%;
-    animation: 2s drupal forwards;
-}
-
-@keyframes drupal {
-    0% {
-        width: 0%;
-    }
-
-    100% {
-        width: 55%;
-    }
-}
-
-.skills .skill .comunicacion {
-    width: 0%;
-    animation: 2s comunicacion forwards;
-}
-
-@keyframes comunicacion {
+@keyframes MetodologíasÁgiles {
     0% {
         width: 0%;
     }
@@ -390,12 +346,42 @@ html {
     }
 }
 
-.skills .skill .trabajo {
+.skills .skill .XRAY {
     width: 0%;
-    animation: 2s trabajo forwards;
+    animation: 2s XRAY forwards;
 }
 
-@keyframes trabajo {
+@keyframes XRAY {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 60%;
+    }
+}
+
+.skills .skill .PowerBI {
+    width: 0%;
+    animation: 2s PowerBI forwards;
+}
+
+@keyframes PowerBI {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+.skills .skill .Javascript {
+    width: 0%;
+    animation: 2s Javascript forwards;
+}
+
+@keyframes Javascript {
     0% {
         width: 0%;
     }
@@ -405,48 +391,93 @@ html {
     }
 }
 
-.skills .skill .creatividad {
+.skills .skill .HTMLCSS {
     width: 0%;
-    animation: 2s creatividad forwards;
+    animation: 2s HTMLCSS forwards;
 }
 
-@keyframes creatividad {
+@keyframes HTMLCSS {
     0% {
         width: 0%;
     }
 
     100% {
-        width: 99%;
+        width: 80%;
     }
 }
 
-.skills .skill .dedicacion {
+.skills .skill .Gestiondeproyectos {
     width: 0%;
-    animation: 2s dedicacion forwards;
+    animation: 2s Gestiondeproyectos forwards;
 }
 
-@keyframes dedicacion {
+@keyframes Gestiondeproyectos {
     0% {
         width: 0%;
     }
 
     100% {
-        width: 65%;
+        width: 90%;
     }
 }
 
-.skills .skill .proyect {
+.skills .skill .organizacion {
     width: 0%;
-    animation: 2s proyect forwards;
+    animation: 2s organizacion forwards;
 }
 
-@keyframes proyect {
+@keyframes organizacion {
     0% {
         width: 0%;
     }
 
     100% {
-        width: 94%;
+        width: 90%;
+    }
+}
+
+.skills .skill .analisis {
+    width: 0%;
+    animation: 2s analisis forwards;
+}
+
+@keyframes analisis {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+.skills .skill .Liderazgo {
+    width: 0%;
+    animation: 2s Liderazgo forwards;
+}
+
+@keyframes Liderazgo {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+.skills .skill .TrabajoEnEquipo {
+    width: 0%;
+    animation: 2s TrabajoEnEquipo forwards;
+}
+
+@keyframes TrabajoEnEquipo {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
     }
 }
 
@@ -573,6 +604,147 @@ html {
     float: left;
     position: relative;
     bottom: 4px;
+}
+/* SECCION CONTACTO */
+.contacto {
+    background-image: url(img/contact_bg.png);
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.contacto .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.contacto h2 {
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.contacto .fila {
+    display: flex;
+}
+
+.contacto .col {
+    width: 50%;
+    padding: 10px;
+    position: relative;
+}
+
+.contacto .col input,
+.contacto .col textarea {
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: #252A2E;
+    color: #fff;
+    font-size: 18px;
+}
+
+.contacto button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+
+.contacto button .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #2ad9df;
+    z-index: -1;
+    transition: 1s;
+}
+
+.contacto button:hover .overlay {
+    width: 100%;
+}
+
+.contacto .col img {
+    width: 100%;
+}
+
+.contacto .col .info {
+    position: absolute;
+    top: 40%;
+    background-color: #252A2E;
+    padding: 20px;
+    max-swidth: 350px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 210px;
+}
+
+.contacto .col .info ul {
+    list-style: none;
+}
+
+.contacto .col .info ul li {
+    margin-bottom: 20px;
+}
+
+.contacto .col .info ul li i {
+    color: #1dcbd1;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+footer {
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+footer .redes {
+    margin-bottom: 20px;
+}
+
+footer .redes a {
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+
+footer .arriba {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #27c3e3;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
 }
 
 /* SECCION RESPONSIVE */
